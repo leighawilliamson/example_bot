@@ -1,0 +1,39 @@
+{
+  "name": "coa-virtual-assistant",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "description": "coa-virtual-assistant",
+  "author": {
+    "name": "Leigh Williamson"
+  },
+  "dependencies": {
+    "assert-plus": "^1.0.0",
+    "axios": "^1.3.4",
+    "body-parser": "^1.15.0",
+    "btoa": "^1.2.1",
+    "cfenv": "^1.2.2",
+    "cookie-parser": "^1.4.0",
+    "crypto-js": "^4.1.1",
+    "debug": "^4.3.4",
+    "express": "^4.17.1",
+    "ibm-watson": "^8.0.0",
+    "mime": "^3.0.0",
+    "morgan": "^1.7.0",
+    "needle": "^3.2.0",
+    "node-fetch": "^2.6.6",
+    "nodemon": "^3.0.0",
+    "npm": "^10.5.2",
+    "oauth-1.0a": "^2.2.6",
+    "pug": "^3.0.2",
+    "serve-favicon": "^2.3.0",
+    "typescript": "^5.0.3"
+  },
+  "repository": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

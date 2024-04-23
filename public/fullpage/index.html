@@ -1,0 +1,47 @@
+<html>
+<head>
+  <base href="/">
+  <title>CoA Virtual Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+  .chatElement {
+    height: 600px;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+    <div class="chatElement"></div>
+
+<script>
+const element = document.querySelector('.chatElement');
+  window.watsonAssistantChatOptions = {
+     // ID for the Assistant named "Sharepoint Ask Benny"
+     integrationID: "8d2ba121-c16b-4aca-8003-a95f94d020ea",
+     region: "us-south",
+     __ibm__: {
+         botNameOverride: 'CoA Virtual Assistant'
+     },
+    // Provide the custom element.
+    element: element,
+    // Hide the close button since we want it always open.
+    hideCloseButton: true,
+    // Hide the default launcher.
+    showLauncher: false,
+    // Make the window open by default.
+    openChatByDefault: true,
+
+    onLoad: function(instance) {
+      instance.render();
+    }
+  };
+
+  setTimeout(function(){const t=document.createElement('script');t.src='https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';document.head.appendChild(t);});
+</script>
+
+</body>
+</html>
